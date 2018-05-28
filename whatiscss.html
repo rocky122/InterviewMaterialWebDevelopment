@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{  text-indent: 50px;
+            border-top-style: dotted;
+            border-bottom-style: dotted;
+            border-left-style: dashed;
+            border-right-style: dashed;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            letter-spacing: 2px;
+        }
+        .me{
+            border: 2px solid red;
+            border-radius: 2px;
+        }
+        h1{
+            text-decoration: overline;
+        }
+        h2{
+            text-decoration: line-through;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 300;
+        }
+        h3{
+            text-decoration: underline;
+        }
+        p.uppercase{
+            text-transform: uppercase;
+            line-height: 2;
+            text-shadow: 3px 2px red;
+        }
+        p.lowercase{
+            text-transform: lowercase;
+            direction: rtl;
+        }
+        p.capitalize{
+            text-transform: capitalize;
+            word-spacing: 10px;
+        }
+        a:link,a:visited{
+            background-color: #f44336;
+            color:white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block
+        }
+        a:hover,a:active{
+            background-color:red;
+            outline-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- css  = gives look and feel to the application -->
+    <!-- A CSS rule set consists of a selector and a declaration block -->
+    <!-- selector points to the html element you want to style -->
+    <!-- Each CSS declaration include a CSS property name and a value, separated by a colon -->
+    <!-- A CSS declaration always end with a semicolon, and a CSS declaration block are surrounded by curly braces -->
+
+<!-- Element selector selects element based on the element name -->
+<!-- id selector used the id attribute of an HTML element to select a specific element on the web page 
+The id of an element should be unique on a page, so id selector is used to select one unique element on the web page-->
+<!-- class selector selects elements based on the class attribute -->
+
+<!-- Which style will be used when there are more than one styles for the HTML element -->
+<!-- Inline > external > internal according to priority based on the cascade order -->
+
+<!-- Inline style will override the style definesd inside the head tag,OR in an external stylesheet externally referenced -->
+
+
+<!-- CSS background Properties
+Used to define the background effects for the HTML elements
+-->
+
+<!-- BACKGROUND PROPERTIES -->
+<!-- background-color,background-image,background-repeat,background-attachment,background-position -->
+
+<!-- background-image property repeats an image both horizontally and vertically -->
+<!-- To repeat the image horizontally -->
+<!-- background-repeat: repeat-x -->
+<!-- and same way repeat-y for vertical -->
+<!-- background-repeat: no-repeat (background image appears only once) -->
+<!-- background-position to change the position of an element -->
+
+<!-- To specify that the background image should be fixed(will not scroll with the rest of the page)
+use background-attachment:fixed -->
+
+<!-- Background Shorthand Property -->
+<!-- background: background-color background-image background-repeat background-position -->
+
+
+<!-- CSS Borders -->
+<!-- To specify the width,color and the style of the borders of an element -->
+<!-- border-style= What kind of border to display -->
+<!-- dotted:  Defines a dotted border -->
+<!-- dashed: Defines a dashed border -->
+<!-- solid: Defines a solid border -->
+<!-- groove: Defines a 3D grooved border -->
+
+<!-- border-width : Specifies the width of the four borders -->
+<!-- size in px/pt/cm/em or thin/medium/thick -->
+
+<!-- border-color: To set the color of the four borders -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aut quasi id sint iure labore veritatis consequuntur at beatae, ab, laboriosam quis rerum quaerat quas eveniet natus voluptatibus ipsa sapiente.</p>
+
+<!-- Style the p element using the border shorthand property -->
+<p id="me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam, placeat laboriosam, possimus blanditiis corporis veritatis, quasi incidunt iusto pariatur accusamus deserunt corrupti tempora quis fugit hic numquam eum perspiciatis.</p>
+<!-- border-radius property is used to add round borders to an element -->
+
+<!-- CSS MARGINS -->
+<!-- Margins are used to create space around the elements
+outside of any defined borders -->
+
+<!-- You can also set the margin property to auto
+to horizontally center the element within the container -->
+<!-- The element will then take up the specified width and the remaining space will be
+equally taken between the left and the right margins -->
+
+<!-- CSS PADDING -->
+<!-- Used to generate space around the element's content inside of any defined borders -->
+<!-- Negative values are not allowed in padding -->
+<!-- Padding shorthand property(top,right,bottom,left) -->
+
+<!-- Element width -->
+<!-- width property specifies the element's content area -->
+
+<!-- Setting the max width -->
+<!-- max-width property is used to set the maximum width of an element -->
+<!-- It improves browser's handling of small windows-->
+
+<!-- CSS BOX MODEL -->
+<!-- All elements can be considered as boxes.
+Box model when talking about design and layout -->
+<!-- CSS BOX MODEL is actually a box that wraps around every HTML element
+.It consists of:margins,borders,padding and the actual content -->
+
+<!-- WIDTH OF AN ELEMENT = width of the content area -->
+<!-- To calculate full size of the element, you must take into account paddings borders margins -->
+
+
+<!-- CSS OUTLINE -->
+<!-- An outline is a line that is drawn around elements,outside the borders, to make the element
+stand out -->
+
+<!-- OUTLINE PROPERTIES -->
+<!-- outline-style(dotted,dashed,solid,double etc.), 
+    outline-color(name,rgb,hex,invert),
+    outline-width(thin,medium,thick,pt/px/cm/em),
+    outline-offset(space between the outline and the border of the element),
+    outline (shorthand property for specification of outline) -->
+<!--  Text properties -->
+    <!-- TEXT COLOR using the color property-->
+    <!-- TEXT ALIGNMENT is used to set the horizontal text alignment
+    A text can be left aligned(text direction is from left to right), right aligned, justified -->
+    <!-- Text decoration to set or remove decorations from the text -->
+<h1>This is overline</h1>
+<h2>This is line through</h2>
+<h3>This is underline</h3>
+   <!--  TEXT TRANSFORM  
+Used to specify uppercase and lowercase characters in the text-->
+<!-- Used to capitalize the first letter of the world and changing the case of the word-->
+<p class="uppercase">This is in uppercase</p>
+<p class="lowercase">This is in lowercase</p>
+<p class="capitalize">This is in capital letter(first)</p>
+<!-- TEXT INDENT used to specify the indentation of the first line of the text -->
+<!-- LETTER SPACING used to specify the spacing between the letters of each word in a text -->
+<!-- LINE HEIGHT IS USED to specify the space between the lines -->
+<!-- DIRECTION used to change the text direction of an element -->
+<!-- WORD SPACING used to specify the spacing between the words in a text -->
+<!-- TEXT SHADOW used to add shadow property to the text -->
+
+<!-- CSS FONT PROPERTIES -->
+<!-- Defines the font family,boldness,size and the style of the text -->
+<!-- generic family = a group of font families with a similar look -->
+<!-- font family: a specific font family -->
+
+<!-- Font Family -->
+<!-- Sets the font-family property for an HTML element -->
+<!-- Should hold several fallback names.If the browser
+does not support the first font, it tries the next font and so on -->
+<!-- We begin with the specific font and end with a generic font family -->
+
+<!--  FONT STYLE used to specify italic text -->
+<!-- normal,italic,oblique(text is leaning) -->
+
+<!-- FONT SIZE sets the size of the text -->
+<!-- can be relative or absolute(px,em) -->
+<!-- 1 em = 16px -->
+
+<!-- FONT WEIGHT -->
+<!-- specifies the weight of the font -->
+
+<!-- CSS LINKS -->
+<!-- Links can be styled depending on what state they are in -->
+
+<!-- a:link - a normal unvisited link -->
+<!-- a:visited - a visited link -->
+<!-- a:hover - a link when the user mouses over it -->
+<!-- a:active - a link the moment it is clicked -->
+
+<a href="https://www.google.com">Go to Google</a>
+
+<!-- CSS LIST STYLINGS -->
+<!-- list-style-type property specifies
+the type of the list item marker -->
+
+<!-- list-style-image specifies an image as the 
+list item marker -->
+<!-- list-style-position:(outside/inside) 
+Specifies the position of the list item marker-->
+<!-- list-style-type:none
+can be used to remove the markers/bullets
+To remove the default margin and padding of the list
+set the margin and padding to 0 -->
+
+<!-- CSS TABLES -->
+<!-- TABLE BORDER IN CSS use the border property -->
+<!-- border-collapse
+to set whether the table borders should collapse
+to a single border -->
+<!-- vertical-align property is used to
+set the vertical alignment(top,bottom,middle)
+of the content of th or td -->
+
+<!-- HORIZONTAL DIVIDERS -->
+<!-- To add horizontal dividers to the table
+use border-bottom property -->
+
+<!-- Setting the display property of an element
+will only change how the element is displayed,
+not what kind of element it is -->
+
+<!-- CSS LAYOUT position property -->
+<!-- Specifies the type of the positioning method used for the element -->
+<!-- static,relative,fixed,absolute,sticky -->
+
+<!-- POSITION:STATIC -->
+<!-- HTML elements are positioned static by default -->
+<!-- Static positioned elements are not affected by top,bottom,left and right properties -->
+<!-- Placed according to the normal flow of the page -->
+
+<!-- POSITION:RELATIVE -->
+<!-- positioned relative to its normal position -->
+<!-- Are affected if we adjust the left,right,bottom properties of the element-->
+
+<!-- POSITION:FIXED -->
+<!-- positioned relative to the viewport -->
+<!-- stays at the same place even if the page is scrolled -->
+<!-- top,bottom,left,right properties are used to position the element -->
+<!-- doesn't leave a gap in page where it would normally have been located-->
+
+<!-- POSITION:ABSOLUTE -->
+<!-- positioned relative to the nearest positional ancestor -->
+
+<!-- OVERLAPPING ELEMENTS -->
+<!-- z-index specifies the stack order of an element
+(which element should be placed in front of or behind the others) -->
+<!-- An element can have a positive or negative stack order -->
+<!-- An element with greater stack order is always in front of the element with lower stack order -->
+
+<!-- OVERFLOW -->
+<!-- controls what happen to the content that is too big too fit in an area -->
+
+<!-- overflow property has the following values -->
+<!-- overflow:visible
+Default. The overflow is not clipped.It renders outside the element's box -->
+<!-- overflow:hidden 
+The overflow is clipped and the rest of the content will be invisible-->
+<!-- overflow:scroll 
+The overflow is clipped but a scrollbar is added to see the rest of the content-->
+<!-- overflow:auto If overflow is clipped, a scrollbar should be added to see the rest of the content-->
+<!-- OVERFLOW ONLY WORKS FOR BLOCK LEVEL ELEMENTS -->
+
+<!-- CSS FLOAT AND THE CLEAR PROPERTY -->
+<!-- float specifies how an element should float -->
+<!-- clear -->
+<!-- clear specifies which element can float beside the cleared element and on which side -->
+
+
+<!-- float:left The element floats to the left of the container -->
+<!-- float:right The element floats to the right of the container -->
+<!-- float:none The element does not float(will be displayed just where it is in the text) -->
+<!-- float:inherit Inherits the float value of the parent element -->
+
+<!-- margin:auto to horizontally center a block -->
+
+<!-- CSS OPACITY 
+specifies the transparency/opacity of the HTML element -->
+<!-- takes a value from 0.0 to 1.0.The lower value more transparent-->
+
+
+</body>
+</html>

@@ -1,0 +1,678 @@
+<!-- declares definition of HTML document to be HTML5 -->
+<!DOCTYPE html>
+
+<!-- Root element of the html page -->
+<html lang="en">
+<!-- head contains the meta information about the HTML document-->
+<!-- container for metadata.It is data about the HTML document.Metadata isn't displayed -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!-- specifies a title for the document -->
+    <title>Page Title</title>
+    <!-- internal css for the webpage -->
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            border-spacing: 5px;
+        }
+        th,td{
+            padding:15px;
+        }
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<!-- defining the background color for the body element -->
+<body style="background-color:powderblue">
+    <!-- Why Headings are important? -->
+
+    <!-- defines a large heading(the most important heading)-->
+ <!-- Search engines use the headings to index the structure and content of your web pages. 
+    Users skim your pages by its headings.
+    It is important to use headings to show the document structure. -->
+    <h1>This is the heading</h1>
+    <!-- defines the least important heading(the least important heading) -->
+    <h6>This is the least important heading</h6>
+    <!-- defines a paragraph -->
+    <!-- <tagname> content goes here </tagname> -->
+    <p style="color:red">This is a paragraph</p>
+    <!-- defines a link -->
+    <a href="https://www.w3schools.com">Go to Bible</a>
+    <!-- defines an image -->
+    <img src="w3schools.jpg" alt="w3schools.com" width="300px" height="500px"/>
+    <!-- defines a button -->
+    <button>Click Me</button>
+    <!-- defines an unorderedlist(ul) and ordered list (ol) -->
+    <ul>
+        <!-- define the text color for an html element -->
+        <li style="color:blue;">Coffee</li>
+        <li style="color:red;">Tea</li>
+        <!-- define the font for the html element using the font-family property -->
+        <li style="font-family: verdana;">Milk</li>
+        <!-- HTML ELEMENT = STARTTAG+CONTENT OF ELEMENT + ENDTAG -->
+        <!-- font-size defines the text size for the html element -->
+        <li style="font-size:200%;">Chocolate</li>
+        <!-- Line break is an empty element with no element content -->
+        <br>
+    </ul>
+    <!-- Add a tooltip to the p element using the title attribute -->
+    <p title="I am a tooltip">This is a paragraph</p>
+    <!-- text-align defines the horizontal text alignment for the html element -->
+    <p style="text-align:center;" title='myname'>This is a paragraph demonstrating that attribute of elements can be written without double quotes as well</p>
+    <p style=color:red;background-color:green;>Hey da!</p>
+    <h1 style="font-size:60px;">Heading 1</h1>
+    <!-- hr tag defines a thematic break in an HTML page
+    and is most often displayed as an horizontal rule -->
+    <!-- used to separate the content in an HTML page -->
+        <h1>This is a heading</h1>
+        <p>This is some text</p>
+        <hr>
+        <h2>This is another heading</h2>
+        <p>This is some other text</p>
+
+        <!-- Browser will ignore white spaces and indentations while rendering the HTML onto the screen -->
+<p>
+    This paragraph contains a lot of 
+            lines in the source code, 
+        but the browser ignores it.
+</p>
+<!-- br is a self closing tag -->
+<!-- br defines a line break -->
+<p>This is <br> a paragraph <br> with two line breaks</p>
+<br>
+<p>
+    This paragraph contains a lot of spaces in the source code, but the browser ignores it.
+</p>
+<!-- pre element defines the preformatted text -->
+<!-- The text inside a -->
+<!-- <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks: -->
+    <pre>Hello there!</pre>
+    <!-- defining the style for the html element -->
+    <!-- <tagname style="cssproperty:cssvalue;"></tagname> -->
+
+<!-- HTML Formatting elements -->
+<!-- HTML also defines special elements for defining text with a special meaning. -->
+<!-- <b> for bold text , <iframe> for italicised text -->
+<b>This is the bold text without any extra importance</b>
+<br>
+<strong>This element defines strong text with added semantic "strong" importance </strong>
+<br>
+<i>This element defines italic text without any extra importance</i>
+<br>
+<em>This text is emphasized with added semantic importance</em>
+<br>
+<small>Defines the smaller text</small>
+<br>
+<mark>Defines the mark or highlighted text</mark>
+<br>
+<del>Defines the deleted(removed) text</del>
+<br>
+<ins>Defines the inserted(added) text</ins>
+<br>
+<sub>Defines the subscripted text</sub>
+<br>
+<sup>Defines the superscripted text</sup>
+
+<!-- HTML Quotations and citations -->
+<br>
+<q>Defines a short quotation.Browsers usually insert quotation marks around the q element</q>
+<br>
+<blockquote>defines a section that is quoted from some other resource.Browsers usually indent these elements</blockquote>
+<br>
+<!-- defines an abbreviation or acronym -->
+<abbr title="World Health Organisation">WHO</abbr>
+<br>
+<br>
+<!-- defines contact information of a document or article.
+The <address> element is usually displayed in italic. Most browsers will add a line break before and after the element. -->
+<address>
+    Written by John Doe.
+    <br> Visit us at:
+    <br> Example.com
+    <br> Box 564, Disneyland
+    <br> USA
+</address>
+<br>
+<!-- cite element defines the title for the work -->
+<cite>The Scream</cite>
+<br>
+<!-- bdo birdirection override used to override the current text direction -->
+<bdo dir="rtl">This text will be written from right to left</bdo>
+<!-- Comments Syntax :) Comments are not displayed by the browser, but they can help document your HTML source code.  -->
+<!-- Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for -->
+<!-- errors: -->
+
+
+<!-- HTML COLORS -->
+<!-- HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. -->
+<!-- Setting the background color for the html elements using the color name -->
+
+<!-- This is inline css definining a style for a single html element -->
+<h1 style="background-color:dodgerblue">Helo World</h1>
+<p style="border:2px solid Violet;background-color:tomato">Lorem Ipsum...</p>
+<!-- For color name Tomato 
+rgba(255,99,71) in RGB values
+#ff6347 using hex values
+hsl(9,100%,64%) using HSLA values
+-->
+<!-- In HTML, a color can be specified as an 
+    RGB value, 
+    using this formula: rgb(red, green, blue) 
+Each parameter defines the intensity of the color in the range from 0 to 255-->
+
+<!-- HEX VALUES -->
+<!-- In HTML, a color can be specified using a hexadecimal value in the form: #rrggbb -->
+<!-- #ff0000 displayed as red because red is set to the highest value-->
+
+<!-- HSL VALUES -->
+<!-- In HTML, a color can be specified using hue, saturation, 
+    and lightness (HSL) in the form: hsl(hue, saturation, lightness) -->
+ <!-- Hue is a degree on the color wheel from 0 to 360.
+ 0 is red, 120 is green, and 240 is blue. 
+ Saturation is a percentage value,0% means a shade of gray, 
+ and 100% is the full color.Saturation can be described as the intensity of the color
+ Lightness is also a percentage, 0% is black, 50% is neither light or
+dark, 100% is white -->
+
+<!-- rgba values = rgb values + alpha parameter -->
+<!-- RGBA color values are an extension of RGB color values with an alpha channel - 
+which specifies the opacity for a color.
+An RGBA color value is specified with: 
+rgba(red, green, blue, alpha) 
+The alpha parameter is a number between 
+0.0 (fully transparent)
+and 1.0 (not transparent at all or opaque): -->
+
+<!-- Similiar applies for hsla = hsl + aplpha parameter -->
+
+<!-- HTML LINKS -->
+<!-- Links are found in nearly all web pages. Links allow 
+users to click their way from page to page. -->
+
+<!-- HTML LINK SYNTAX 
+    <a href="url">link text</a>
+    Local link below specified with a relative URL
+    <a href="html_images.asp">HTML Images</a>
+ -->
+
+ <!-- Note
+An unvisited link is underlined and blue 
+A visited link is underlined and purple 
+An active link is underlined and red
+-->
+
+<!-- Target attribute
+It specifies where to open the link document
+_blank = Open the linked document in a new window or tab
+_self = Open the linked document in the same window/tab as it was clicked(default)
+_parent=Open the linked document in the parent frame
+_top = Open the linked document in full body of the window
+framename = Open the linked document in a named frame
+-->
+
+<!-- HTML BOOKMARKS
+HTML bookmarks are used to allow readers to jump to specific parts of a Web page. Bookmarks can be useful if your webpage
+is very long. To make a bookmark, you must first create the bookmark, and then add a link to it. When the link is clicked,
+the page will scroll to the location with the bookmark.
+-->
+
+<!-- html images -->
+<!-- img tag is self closing ,it contains attributes only
+and doesn't have a closing tag -->
+
+<!-- Define an image ma[p]
+An image map is an image with clickable areas -->
+
+<!-- background-image property for defining image on an HTML element -->
+<!-- Illustration = 
+<body style="background-image:url('clouds.jpg')">
+
+    <h2>Background Image</h2>
+
+</body> -->
+
+<!-- HTML TABLES -->
+<table style="width:100%;">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+
+<!-- HTML TABLE - Cells that span many columns -->
+<table style="width:100%;">
+    <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+    </tr>
+    <tr>
+        <td>Bill Gates</td>
+        <td>32323232323</td>
+        <td>232322425122423</td>
+    </tr>
+</table>
+<!-- To make a cell span more than one row use the rowspan attribute -->
+<table style="width:100%">
+    <!-- To add a caption to a table use the caption tag -->
+    <caption>Bil Gates</caption>
+    <tr>
+        <th>Name:</th>
+        <td>Bill Gates</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Telephone:</th>
+        <td>55577854</td>
+    </tr>
+    <tr>
+        <td>55577855</td>
+    </tr>
+</table>
+
+<!-- Unordered HTML list - Choose list item marker -->
+<!-- set the list item marker to disc,circle,square and none possibly -->
+<ul style="list-style-type:circle">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+<!-- Ordered list starts with ol tag.Each list item starts with li tag
+The list item will be marked with numbers by default -->
+
+<!-- The type attribute of the -->
+<!-- <ol> tag, defines the type of the list item marker: -->
+<!-- types: 1,A,a,I,i-->
+<ol type="A"> 
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<!-- 
+HTML Description Lists 
+
+HTML also supports description lists. A description list is a list of terms
+, with a description of each term. The
+<dl> tag defines the description list, the
+    <dt> tag defines the term (name), and the
+        <dd> tag describes each term: -->
+
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+</dl>
+
+<!-- Nested HTML lists -->
+<ul>
+    <li>Coffee</li>
+    <li>Tea
+        <ul>
+            <li>Black Tea</li>
+            <li>Green Tea</li>
+        </ul>
+    </li>
+    <li>Milk</li>
+</ul>
+
+<!-- For ordered list if you want to start counting from some other number -->
+<ol start="30">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<!-- HTML Block and inline elements -->
+
+<!-- Every HTML element has a default display value depending on what type of element it is. The default display value for most
+elements is block or inline. -->
+
+<!-- BLOCK LEVEL ELEMENTS -->
+<!-- A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right -->
+<!-- as far as it can). -->
+
+<div>Hello I am a block level element</div>
+
+<!-- INLINE ELEMENTS -->
+<!-- An inline element does not start on a new line and only takes up as much width as necessary. -->
+<!-- example - span -->
+<span>Hello</span>
+<span>World</span>
+
+<!-- Div element is the container for other HTML ELEMENTS
+When used together with css, the div element can be used to style blocks of content -->
+<div style="background-color:black;color:white;padding:20px;">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of
+        over 13 million inhabitants.</p>
+</div>
+
+<!-- SPAN element is often used as container for some text -->
+<!-- Together with css it can be used to style parts of text since span is an inline element -->
+<h1>My
+    <span style="color:red;">Important</span>
+    Heading
+</h1>
+
+<!-- HTML CLASSES AND IDs -->
+<!-- class attribute specifies one or more classes for an HTML element -->
+<!-- JS can access elements with a specifiec classname by using getElementsByClassName() method -->
+<!-- HTML elements can have more than one classnames separated by space -->
+
+<!-- id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document)-->
+<!-- The id value can be used by CSS and JavaScript to perform certain tasks for a unique element with the specified id value. -->
+
+<!-- HTML Iframes -->
+<!-- used to display a webpage within a webpage -->
+<!-- <iframe src="URL"></iframe> -->
+<!-- Set the width and height of the frame to specify the size of the frame -->
+
+<!-- HTML JAVASCRIPT -->
+<!-- js makes HTML pages more dynamic and interactive -->
+<!-- script tag is used to define the client side script -->
+
+
+<!-- JS can change the HTML content
+document.getElementById('#id').innerHTML = "some text" -->
+
+<!-- JS can change the style of an element just as in css 
+document.getElementById('#id').style.color = 'red'-->
+
+<!-- JS can change the HTML attributes -->
+
+<!-- The
+<noscript> tag is used to provide an alternate 
+    content for users that have disabled scripts 
+    in their browser or have a browser that
+    doesn't support client-side scripts: -->
+    
+<!-- The HTML <head> Element 
+    The <head> element is a container for metadata (data about data) 
+        and is placed between the <html> tag and the
+<body> tag. HTML metadata is data about the HTML document. 
+Metadata is not displayed. Metadata typically define the 
+document title, character set, styles, links, scripts, and 
+other meta information. The following tags describe metadata:
+<title>,<style>, <meta>,<link>,<script>,and <base>. -->
+                   
+<!-- HTML BASE ELEMENT -->
+<!-- <base> element specifies the base URL and base target for all relative URLs in a page: -->
+    
+
+<!-- Computer Code Elements -->
+<!-- <kbd> element represents user input, like keyboard input or voice commands.-->
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+    
+<!-- <samp> element -->
+    <!-- <code> element to define the fragment of computer code -->
+<code>
+    x = 5;
+    y = 6;
+    z = x + y;
+</code>
+<!-- code element doesn't preserve extra space and line breaks-->
+<!-- To fix this put the code element inside the pre element -->
+<pre>
+    <code>
+        x = 5; 
+        y = 6; 
+        z = x + y;
+    </code>
+</pre>
+<!-- HTML VAR FOR VARIABLES -->
+<!-- var is used to define the variables -->
+<!-- variable could be a variable in mathematical context or some programming language -->
+Einstein wrote: <var>E</var>= <var>mc</var><sup>2</sup>
+
+<!-- HTML Entities -->
+
+<!-- Reserved characters in HTML must be replaced with character entities -->
+<!-- Characters that are not present on your keyboard can also be replaced by entities. -->
+<!-- If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags. --> -->
+<!-- Used to display reserved characters in HTML -->
+
+<!-- A character entity looks like this: 
+    &entity_name; OR 
+    &#entity_number; -->
+
+<!-- &nbsp non breaking space that will not break into new line -->
+
+<!-- URL is used to address a document on the web -->
+<!-- A web address, like https://www.w3schools.com/html/default.asp follows these syntax rules: -->
+
+<!-- scheme://prefix.domain:port/path/filename -->
+
+<!-- scheme - defines the type of Internet service (most common is http or https) 
+    prefix - defines a domain prefix (default for http is www) domain - defines the Internet domain name (like w3schools.com)
+    port - defines the port number at the host (default
+for http is 80) 
+path - defines a path at the server (If omitted: the root directory of the site) 
+filename - defines the name of a document or resource -->
+
+<!-- http Common web pages Not encrypted -->
+<!-- https Secure web pages Encryption -->
+<!-- ftp Downloading or uploading files -->
+<!-- file A file on your computer -->
+
+<!-- A little about XHTML -->
+<!-- XHTML stands for Extensible HTML -->
+<!-- xhtml is almost identical to HTML -->
+<!-- xhtml is html defined as an xml application -->
+<!-- supported by all major browsers -->
+
+<!-- in XHTML DOCTYPE is mandatory,xmlns attribute 
+is mandatory, html,head,title,body are mandatory 
+properly nested,must always be closed, in lowercase, must have one root element -->
+<!-- Attribute minimisation is forbidden -->
+
+<!-- HTML FORMS -->
+<!-- form element is used to collect user input -->
+
+<!-- <form action=""></form> -->
+<!-- An html form contains form elements -->
+
+<!-- input element is the most important form element -->
+<!-- Displayed in several ways depending on the type attribute -->
+
+<input type="text" placeholder="Enter the name">
+<!-- Defines one line text input field -->
+<input type="radio" name="" id="">
+<!-- Defines a radio button for selecting one of many choices -->
+<input type="submit" value="">
+<!-- Defines a submit button for submission of form -->
+
+<!-- action attribute defines the action to be performed when form is submitted to the server -->
+<!-- method attribute specifies the HTTP method to be used when submitting the form data -->
+<!-- <form action="" method=""></form> -->
+
+<!-- Never use GET to send sensitive data! (will be visible in the URL) -->
+<!-- GET is better for non-secure data, like query strings in Google -->
+
+<!-- Use POST when form data contains sensitive or personal information.
+The post method does not display the submitted form data into the page address field
+.No size limitations and can be used to send large amounts of data -->
+
+<!-- If an input field is not specified with the name attribute, the data
+for that field will not be sent at all to the server -->
+
+<!-- GROUPING FORM DATA WITH FIELDSET -->
+
+<form action="/action_page.php">
+ <fieldset>
+     <legend>Personal Information</legend>
+     First name:  <br>
+     <input type="text" name="firstname" value="Mickey">
+     Last name: <br>
+     <input type="text" name="lastname" value="Mouse">
+     <br>
+     <input type="submit" value='Submit'>
+ </fieldset>
+</form>
+
+<!-- select element defines the dropdown list -->
+<select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi" selected>Audi</option>
+</select>
+<!-- By default the first item in the list is selected -->
+
+<!-- Use the size attribute to specify the number of visible values in the select element -->
+<!-- To allow multiple selections use the multiple attribute -->
+
+<!-- TEXTAREA ELEMENT -->
+<!-- Defines a multiline input field -->
+<!-- rows attribute specifies the number of visible rows in the textarea -->
+<!-- cols attribute specifies the visible width of textarea -->
+<textarea name="message" cols="30" rows="10">
+    The cat was playing in the garden
+</textarea>
+
+<!-- BUTTON element -->
+<!-- Defines a clickable button -->
+<button type="submit" onclick="alert('Hello World')">Click Me</button>
+
+<!-- OUTPUT ELEMENT represents the result for a calculation that happens -->
+<form action="/action_page.php"
+oninput="x.value = parseInt(a.value)+parseInt(b.value)">
+0
+<input type="range" id="a" name="a" value="50">
+100+
+<input type="number" id="b" name="b" value="50">
+=
+<output name="x" for="a b"></output>
+<br><br>
+<input type="submit">
+</form>
+
+
+<!-- DIFFERENT INPUT TYPES FOR THE input element -->
+
+<form action="">
+    FirstName: <br>
+    <input type="text" name="firstname">
+    <br>
+    LastName: <br>
+    <input type="text" name="lastname">
+</form>
+
+<!-- input type=password defines the password field -->
+<form action="/action_page.php">
+    Username : <br>
+    <input type="text" name="username" value="prateek">
+    <br>
+    Password : <br>
+    <input type="password" name="password">
+    <input type="submit" value="Submit">
+    <!-- Defines the reset button that will reset all the form values to their default values-->
+    <input type="reset">
+</form>
+
+<!-- input type=submit defines a button for the form submission to a form handler-->
+
+<!-- input type=checkbox defines a checkbox for let the user select zero or more number of options of a limited number of choices -->
+<input type="checkbox" name="vehicle1" value="Bike"> I have a bike 
+<br>
+<input type="checkbox" name="vehicle2" value="Car"> I have a car
+
+<!-- input type=color is used for input fields that should contain a color -->
+<input type="color" name="favcolor">
+
+<!-- input type=date is used for input fields that should contain a date -->
+<input type="date" name="bday" min="2000-01-02">
+
+<!-- input type=email is used for input fields that should contain an email address -->
+<input type="email" name="email">
+<!--  input type=date is used to select a month and a year-->
+<input type="month" name="bdaymonth">
+<!-- input type=number defines a numerical input field 
+impose restrictions using min and max attribute -->
+
+<!-- RESTRICTIONS AS ATTRIBUTES ON INPUT ELEMENTS -->
+<!-- 
+disabled,max,maxlength,min,pattern(a RE to check the input value against),
+readonly(field is readonly), required,size(width in characters),
+step,value
+ -->
+<!-- used for search fields behaves like a regular text field -->
+ <input type="search" name="googlesearch" id="">
+<input type="tel" name="" id="">
+<!-- allows the user to select a time -->
+<input type="time" name="" id="">
+<!-- input fields that should contain a URL address -->
+<input type="url" name="" id="">
+<!-- allowes user to select a week and a year -->
+<input type="week" name="week_year" id="">
+<input type="text" value="Initial value of the input field">
+
+<!-- disabled attribute is unusable and unclickable, and its value will not be sent when submitting the form -->
+<!-- 
+The autocomplete Attribute 
+The autocomplete attribute specifies whether a form or input field should have autocomplete on
+or off. When autocomplete is on, the browser automatically completes the input values based on values that the user has entered
+before. -->
+
+<!-- novalidate attribute is a form attribute which specifies that form should not be validated when form is submitted -->
+
+<!-- autofocus attribute on the input field specifies that input field automatically gets focus when that page is loaded -->
+<input type="text" name="fname" autofocus>
+<!-- 
+The placeholder Attribute 
+The placeholder attribute specifies a hint that describes the expected value of an input field
+(a sample value or a short description of the format). -->
+<input type="text" name="fname" placeholder="Enter the firstname" id="" required>
+<script>
+       // document.getElementById('#demo').innerHTML = 'hello there';
+    </script>
+<noscript>
+        Sorry Your browser doesn't support clientside Javascript
+</noscript>
+
+    
+</body>
+</html>
+
+<!-- 
+alt 
+Specifies an alternative text for an image, when the image cannot be displayed 
+
+disabled 
+Specifies that an input element
+should be disabled 
+
+href 
+Specifies the URL (web address) for a link 
+
+id 
+Specifies a unique id for an element 
+
+src 
+Specifiesthe URL (web address) for an image 
+
+style 
+
+Specifies an inline CSS style for an element 
+
+title 
+
+Specifies extra information about
+an element (displayed as a tool tip) -->
