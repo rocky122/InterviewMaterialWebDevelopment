@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: black;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .button:hover {
+            background-color: black;
+        }
+
+        .button:active {
+            background-color: black;
+            box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0);
+            transform: translateY(4px);
+        }
+
+        .button-hover {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .button-hover span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button-hover span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button-hover:hover span {
+            padding-right: 25px;
+        }
+
+        .button-hover:hover span:after {
+            opacity: 0.7;
+            right: 0;
+        }
+
+        .btn {
+            border: 5px dotted black;
+            background-color: white;
+            color: black;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Green */
+
+        .success {
+            border-color: #4CAF50;
+            color: green;
+            letter-spacing: 2px;
+        }
+
+        .success:hover {
+            background-color: orangered;
+            border: 5px dotted #4CAF50;
+            color: white;
+        }
+
+        /* Blue */
+
+        .info {
+            border-color: #2196F3;
+            color: dodgerblue;
+            letter-spacing: 2px;
+        }
+
+        .info:hover {
+            background: black;
+            color: white;
+
+        }
+
+        /* Orange */
+
+        .warning {
+            border-color: #ff9800;
+            color: orange;
+            letter-spacing: 2px;
+        }
+
+        .warning:hover {
+            background: yellow;
+            color: black;
+        }
+
+        /* Red */
+
+        .danger {
+            border-color: 5px dotted #f44336;
+            color: red;
+            letter-spacing: 2px;
+        }
+
+        .danger:hover {
+            background: #f44336;
+            color: black;
+        }
+
+        /* Gray */
+
+        .default {
+            border-color: 5px dashed #e7e7e7;
+            color: black;
+        }
+
+        .default:hover {
+            background: #e7e7e7;
+        }
+
+        /*Social Media Buttons Copy Paste from here*/
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+            background: #3B5998;
+            color: white;
+            }
+
+            .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+
+            .fa-google {
+            background: #dd4b39;
+            color: white;
+            }
+
+            .fa-linkedin {
+            background: #007bb5;
+            color: white;
+            }
+
+            .fa-youtube {
+            background: #bb0000;
+            color: white;
+            }
+
+            .fa-instagram {
+            background: #125688;
+            color: white;
+            }
+
+            .fa-pinterest {
+            background: #cb2027;
+            color: white;
+            }
+
+            .fa-snapchat-ghost {
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+
+            .fa-skype {
+            background: #00aff0;
+            color: white;
+            }
+
+            .fa-android {
+            background: #a4c639;
+            color: white;
+            }
+
+            .fa-dribbble {
+            background: #ea4c89;
+            color: white;
+            }
+
+            .fa-vimeo {
+            background: #45bbff;
+            color: white;
+            }
+
+            .fa-tumblr {
+            background: #2c4762;
+            color: white;
+            }
+
+            .fa-vine {
+            background: #00b489;
+            color: white;
+            }
+
+            .fa-foursquare {
+            background: #45bbff;
+            color: white;
+            }
+
+            .fa-stumbleupon {
+            background: #eb4924;
+            color: white;
+            }
+
+            .fa-flickr {
+            background: #f40083;
+            color: white;
+            }
+
+            .fa-yahoo {
+            background: #430297;
+            color: white;
+            }
+
+            .fa-soundcloud {
+            background: #ff5500;
+            color: white;
+            }
+
+            .fa-reddit {
+            background: #ff5700;
+            color: white;
+            }
+
+            .fa-rss {
+            background: #ff6600;
+            color: white;
+            }
+
+            /*Icon buttons with and without text*/
+            .button__icon {
+                background-color: black;
+                border: none;
+                color: white;
+                padding: 12px 16px;
+                font-size: 16px;
+                cursor: pointer;
+                letter-spacing: 2px;
+                text-transform: capitalize;
+                border-radius: 15px;
+            }
+
+            /* Darker background on mouse-over */
+            .button__icon:hover {
+                background-color: white;
+                color:black;
+            }
+            /*Block button*/
+            .block {
+                display: block;
+                width: 100%;
+                border: 5px solid black;
+                border-radius: 15px;
+                letter-spacing: 2px;
+                background-color: #4CAF50;
+                padding: 17px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                text-align: center;
+                filter: blur(1px);
+                
+            }
+            .block:hover{
+                filter:opacity(1);
+            }
+            /*Scroll to top buttons format*/
+
+                            
+                #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+                }
+
+                #myBtn:hover {
+                background-color: #555;
+                }
+
+    </style>
+</head>
+
+<body>
+    <!-- Buttons that we can use during development -->
+    <button class="button">Click Me</button>
+    <button class="button-hover">
+        <span>Hover </span>
+    </button>
+    <!-- Outline buttons -->
+    <button class="btn success">Success</button>
+    <button class="btn info">Info</button>
+    <button class="btn warning">Warning</button>
+    <button class="btn danger">Danger</button>
+    <button class="btn default">Default</button>
+
+    <!-- Social Media Buttons -->
+
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-snapchat-ghost"></a>
+    <a href="#" class="fa fa-skype"></a>
+    <a href="#" class="fa fa-android"></a>
+    <a href="#" class="fa fa-dribbble"></a>
+    <a href="#" class="fa fa-vimeo"></a>
+    <a href="#" class="fa fa-tumblr"></a>
+    <a href="#" class="fa fa-vine"></a>
+    <a href="#" class="fa fa-foursquare"></a>
+    <a href="#" class="fa fa-stumbleupon"></a>
+    <a href="#" class="fa fa-flickr"></a>
+    <a href="#" class="fa fa-yahoo"></a>
+    <a href="#" class="fa fa-reddit"></a>
+    <a href="#" class="fa fa-rss"></a>
+
+    <!-- Icon Buttons -->
+    <button class="button__icon"><i class="fa fa-home"></i></button>
+    <button class="button__icon"><i class="fa fa-bars"></i></button>
+    <button class="button__icon"><i class="fa fa-trash"></i></button>
+    <button class="button__icon"><i class="fa fa-close"></i></button>
+    <button class="button__icon"><i class="fa fa-folder"></i></button>
+
+    <!-- Icon Buttons with text -->
+    <button class="button__icon"><i class="fa fa-home"></i>Home</button>
+    <button class="button__icon"><i class="fa fa-bars"></i>Menu</button>
+    <button class="button__icon"><i class="fa fa-trash"></i>Trash</button>
+    <button class="button__icon"><i class="fa fa-close"></i>Close</button>
+
+    <!-- Block button -->
+    <button type="button" class="block">Block Button</button>
+    </script>
+</body>
+
+</html>
